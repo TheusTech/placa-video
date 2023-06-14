@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #282828 ,#ccc,#ccc,#ccc, #282828);
+    
+  }
+
+  .menu { background-color: #282828; }
+.menu ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.menu ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+.menu ul li a {
+  font-family: 'open_sansregular';
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+  display: block;
+  line-height: 50px;
+  padding: 0 35px;
+  letter-spacing: 3px;
+  position: relative;
+}
+.menu ul li a:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4aeab;
+  color: #ccc;
+  z-index: -1;
+  transform: skewX(-35deg);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.menu ul li:hover a,
+.menu ul li:focus a,
+.menu ul li.active a {
+  color: #282828;
+}
+.menu ul li:hover a:after,
+.menu ul li:focus a:after,
+.menu ul li.active a:after {
+  opacity: 1;
+}
+article {
+    box-shadow: 10 5px 5px rgb(160, 160, 160);
+    margin: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;  
+    color: #333;    
+    background-color: #f4f4f4;
+    max-width: 1000px;
+    
+  }
+
+  article h3 {
+    margin-top: 0;
+  }
+
+  article p {
+    line-height: 1.5;
+  }
