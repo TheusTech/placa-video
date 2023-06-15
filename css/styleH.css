@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #282828 ,#ccc,#ccc,#ccc, #282828);
+    align-items: center;
     
   }
 
@@ -62,7 +63,7 @@ article {
     font-family: Arial, sans-serif;  
     color: #333;    
     background-color: #f4f4f4;
-    max-width: 1000px;
+    max-width: auto;
     
   }
 
